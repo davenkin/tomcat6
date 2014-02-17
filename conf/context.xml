@@ -31,5 +31,11 @@
     <!--
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
     -->
+    
+    <Resource name="jdbc/MyDataSource" auth="Container" 
+          type="com.mysql.jdbc.jdbc2.optional.MysqlXADataSource" 
+          factory="com.mysql.jdbc.jdbc2.optional.MysqlDataSourceFactory"           
+          user="root" password="" explicitUrl="true"
+          url="jdbc:mysql://localhost:3306/spring"/>
 
 </Context>
